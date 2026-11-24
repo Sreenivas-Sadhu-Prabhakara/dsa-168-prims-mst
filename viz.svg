@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="734.0" viewBox="0 0 760 734.0" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="732.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">Prim's MST — grow one tree, always the cheapest crossing</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Connect all 5 vertices with minimum total wire. Prim grows a single tree from vertex</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">0: repeatedly add the cheapest edge CROSSING from tree to non-tree.</text>
+<line x1="178.7" y1="150.6" x2="358.2" y2="128.7" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="269.4" y="133.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">2</text>
+<line x1="177.8" y1="159.3" x2="327.5" y2="209.1" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="253.6" y="178.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">1</text>
+<line x1="373.4" y1="144.9" x2="355.7" y2="195.2" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="364.2" y="165.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">1</text>
+<line x1="368.3" y1="213.6" x2="547.8" y2="191.7" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="459.0" y="196.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">2</text>
+<line x1="569.6" y1="209.0" x2="569.6" y2="257.0" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="569.6" y="228.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">1</text>
+<line x1="550.4" y1="273.5" x2="369.6" y2="222.0" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="459.0" y="241.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">2</text>
+<circle cx="158.8" cy="153.0" r="18" fill="#dbeafe" stroke="#2563eb" stroke-width="1.4"/>
+<text x="158.8" y="158.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">0</text>
+<circle cx="380.0" cy="126.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="380.0" y="131.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">1</text>
+<circle cx="348.4" cy="216.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="348.4" y="221.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">2</text>
+<circle cx="569.6" cy="189.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="569.6" y="194.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">3</text>
+<circle cx="569.6" cy="279.0" r="18" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="569.6" y="284.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">4</text>
+<line x1="24.0" y1="327.0" x2="736.0" y2="327.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="347.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="351.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="352.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">From {0}: cheapest crossing is 0-2 (1). Then 2-1 (1) beats 0-1 (2). Then 2-3 or 2-4</text>
+<text x="56.0" y="371.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">(2) — take 2-3, then 3-4 (1). A min-heap of crossing edges picks each winner.</text>
+<line x1="177.8" y1="432.3" x2="327.5" y2="482.1" stroke="#16a34a" stroke-width="1.6"/>
+<text x="253.6" y="451.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">1</text>
+<line x1="373.4" y1="417.9" x2="355.7" y2="468.2" stroke="#16a34a" stroke-width="1.6"/>
+<text x="364.2" y="438.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">1</text>
+<line x1="368.3" y1="486.6" x2="547.8" y2="464.7" stroke="#16a34a" stroke-width="1.6"/>
+<text x="459.0" y="469.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">2</text>
+<line x1="569.6" y1="482.0" x2="569.6" y2="530.0" stroke="#16a34a" stroke-width="1.6"/>
+<text x="569.6" y="501.0" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">1</text>
+<line x1="178.7" y1="423.6" x2="358.2" y2="401.7" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="269.4" y="406.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">2</text>
+<line x1="550.4" y1="546.5" x2="369.6" y2="495.0" stroke="#94a3b8" stroke-width="1.6"/>
+<text x="459.0" y="514.5" font-family="ui-monospace,Menlo,monospace" font-size="11" fill="#64748b" text-anchor="middle">2</text>
+<circle cx="158.8" cy="426.0" r="18" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+<text x="158.8" y="431.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">0</text>
+<circle cx="380.0" cy="399.0" r="18" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+<text x="380.0" y="404.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">1</text>
+<circle cx="348.4" cy="489.0" r="18" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+<text x="348.4" y="494.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">2</text>
+<circle cx="569.6" cy="462.0" r="18" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+<text x="569.6" y="467.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">3</text>
+<circle cx="569.6" cy="552.0" r="18" fill="#dcfce7" stroke="#16a34a" stroke-width="1.4"/>
+<text x="569.6" y="557.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">4</text>
+<line x1="24.0" y1="600.0" x2="736.0" y2="600.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="620.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="624.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="625.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Total: 1+1+2+1 = 5. The cut property guarantees greed is safe: the cheapest edge</text>
+<text x="56.0" y="644.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">across any tree/non-tree cut belongs to SOME minimum spanning tree.</text>
+<text x="72.0" y="679.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#64748b" text-anchor="end">answer</text>
+<rect x="84.0" y="660.0" width="144.0" height="28.0" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+<text x="156.0" y="679.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">MST weight → 5</text>
+<rect x="238.0" y="660.0" width="252.0" height="28.0" rx="6" fill="#f8fafc" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="364.0" y="679.0" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#1e293b" text-anchor="middle">edges → 0-2, 1-2, 2-3, 3-4</text>
+<text x="380.0" y="716.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
